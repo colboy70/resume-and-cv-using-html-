@@ -1,0 +1,197 @@
+#This is for cv
+>
+>
+>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhinav Kumar Verma - CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent: #0f766e;
+      --muted: #6b7280;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --paper-padding: 28px;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:900px;margin:28px auto;padding:18px}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.08);overflow:hidden}
+    header{display:flex;gap:20px;padding:var(--paper-padding)}
+    .avatar{flex:0 0 110px;height:110px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2563eb);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    .head-info{flex:1}
+    .name{font-size:22px;font-weight:800;margin:0}
+    .title{color:var(--muted);margin-top:6px;margin-bottom:12px}
+    .meta{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+
+    .body{display:grid;grid-template-columns:1fr 320px;gap:20px;padding:0 var(--paper-padding) var(--paper-padding)}
+    .section{margin-bottom:18px}
+    h2{font-size:14px;margin:0 0 10px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.9px}
+    p.lead{margin:0;color:#111827}
+
+    .item{padding:12px;border-radius:8px;border:1px solid #eef2f6;margin-bottom:10px;background:#ffffff}
+    .item .row{display:flex;justify-content:space-between;align-items:center}
+    .item h3{margin:0;font-size:15px}
+    .item .muted{color:var(--muted);font-size:13px}
+    ul{margin:8px 0 0 18px}
+
+    .sidebar{padding:16px}
+    .skill{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    .skill .bar{height:8px;background:#eef2f6;border-radius:999px;flex:1;margin-left:10px;overflow:hidden}
+    .skill .bar > span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#2563eb);}
+
+    .projects{display:grid;grid-template-columns:1fr;gap:10px}
+
+    footer{padding:12px 18px;border-top:1px dashed #e6eef6;color:var(--muted);font-size:13px}
+
+    @media (max-width:880px){
+      .body{grid-template-columns:1fr;}
+      .sidebar{order:2}
+      header{flex-direction:row;align-items:center}
+    }
+
+    @media print{
+      body{background:white}
+      .container{max-width:100%;margin:0}
+      .card{box-shadow:none;border-radius:0}
+      a[href]:after{content:""}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">AV</div>
+        <div class="head-info">
+          <h1 class="name">Abhinav Kumar Verma</h1>
+          <div class="title">Full-Stack Java Developer</div>
+          <div class="meta">
+            <div>📍 India</div>
+            <div>✉️ <a href="mailto:sunnyverma457712@gmail.com">sunnyverma457712@gmail.com</a></div>
+            <div>📞 7004192379</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="body">
+        <main>
+          <section class="section">
+            <h2>Profile</h2>
+            <p class="lead">Results-driven software engineer with experience building scalable web applications. Strong background in Java backend development, REST APIs, microservices and cloud deployment. Passionate about clean code, testing and mentoring teams.</p>
+          </section>
+
+          <section class="section">
+            <h2>Work Experience</h2>
+            <div class="item">
+              <div class="row">
+                <div>
+                  <h3>Senior Backend Engineer — Acme Tech</h3>
+                  <div class="muted">Jul 2022 — Present • Mumbai, India</div>
+                </div>
+                <div class="muted">Java · Spring Boot · Docker</div>
+              </div>
+              <ul>
+                <li>Designed and implemented microservices for payments processing, reducing latency by 38%.</li>
+                <li>Led migration from monolith to microservices using Spring Cloud and Kubernetes.</li>
+                <li>Implemented observability (Prometheus, Grafana) and improved SLOs.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div>
+                  <h3>Backend Developer — ByteWorks</h3>
+                  <div class="muted">May 2019 — Jun 2022 • Remote</div>
+                </div>
+                <div class="muted">Java · Hibernate · MySQL</div>
+              </div>
+              <ul>
+                <li>Built RESTful APIs and integrated third-party services (Stripe, Twilio).</li>
+                <li>Wrote unit and integration tests raising code coverage to 84%.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Education</h2>
+            <div class="item">
+              <h3>B.Tech in Computer Science</h3>
+              <div class="muted">IIT Example — 2015 — 2019</div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Selected Projects</h2>
+            <div class="projects">
+              <div class="item">
+                <h3>E-Commerce Microservices Platform</h3>
+                <div class="muted">Java · Spring Boot · Kafka · MySQL</div>
+                <p>Designed product, cart and order microservices with event-driven architecture and Saga pattern for distributed transactions. Improved throughput and modularity.</p>
+              </div>
+
+              <div class="item">
+                <h3>Corona Monitoring Data Pipeline</h3>
+                <div class="muted">Python · Airflow · Postgres · Docker</div>
+                <p>Built ETL pipeline ingesting health reports and dashboards for real-time analytics (used for coursework).</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Certifications</h2>
+            <div class="item">
+              <div class="muted">Oracle Certified Professional, Java SE</div>
+            </div>
+          </section>
+        </main>
+
+        <aside class="sidebar">
+          <section class="section">
+            <h2>Skills</h2>
+            <div class="skill"><div>Java</div><div class="bar"><span style="width:92%"></span></div></div>
+            <div class="skill"><div>Spring Boot</div><div class="bar"><span style="width:88%"></span></div></div>
+            <div class="skill"><div>Microservices</div><div class="bar"><span style="width:82%"></span></div></div>
+            <div class="skill"><div>SQL / Hibernate</div><div class="bar"><span style="width:78%"></span></div></div>
+            <div class="skill"><div>Docker / Kubernetes</div><div class="bar"><span style="width:70%"></span></div></div>
+          </section>
+
+          <section class="section">
+            <h2>Tech</h2>
+            <div class="item">
+              <p class="muted">Java | Spring Boot | REST | Hibernate | MySQL | PostgreSQL | Docker | Kubernetes | Kafka | AWS | Git | Prometheus</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Languages</h2>
+            <div class="item">
+              <p class="muted">English (Professional), Hindi (Native)</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Interests</h2>
+            <div class="item">
+              <p class="muted">Open-source, Mentoring, Running, Data-driven systems</p>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <footer>
+        <div style="padding:8px 18px">Last updated: November 2025 • Export this page as PDF (File → Print → Save as PDF) for submission.</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
