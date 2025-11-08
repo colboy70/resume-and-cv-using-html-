@@ -1,0 +1,152 @@
+#this is for resume 
+>
+>
+>
+>
+>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Abhinav Kumar Verma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0f766e;--muted:#6b7280;--bg:#ffffff;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0b1220}
+    .paper{max-width:800px;margin:18px auto;padding:28px;border:1px solid #eef3f6;border-radius:8px}
+    header{display:flex;justify-content:space-between;align-items:flex-start}
+    .left{max-width:68%}
+    h1{margin:0;font-size:22px}
+    .sub{color:var(--muted);margin-top:6px}
+    .contact{margin-top:8px;color:var(--muted);font-size:14px}
+
+    .columns{display:flex;gap:20px;margin-top:18px}
+    .main{flex:1}
+    .side{width:240px}
+
+    section{margin-bottom:14px}
+    h3{margin:0 0 8px 0;font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:0.8px}
+    .item{margin-bottom:8px}
+    .job{display:flex;justify-content:space-between}
+    .muted{color:var(--muted);font-size:13px}
+    ul{margin:8px 0 0 18px}
+
+    .skill{margin-bottom:8px}
+    .skill .label{font-size:14px}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .chip{padding:6px 8px;border-radius:6px;background:#f1f6f5;border:1px solid #e6f0ee;font-size:13px}
+
+    @media print{.paper{border:none;border-radius:0}}
+    @media (max-width:720px){.columns{flex-direction:column}.side{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="paper">
+    <header>
+      <div class="left">
+        <h1>Abhinav Kumar Verma</h1>
+        <div class="sub">Full-Stack Java Developer</div>
+        <div class="contact">📞 7004192379 • ✉️ <a href="mailto:sunnyverma457712@gmail.com">sunnyverma457712@gmail.com</a> • 📍 India</div>
+      </div>
+      <div class="right muted">Last updated: November 2025</div>
+    </header>
+
+    <div class="columns">
+      <div class="main">
+        <section>
+          <h3>Professional Summary</h3>
+          <div class="item muted">Practical and results-focused backend engineer with hands-on experience in Java, Spring Boot and building RESTful microservices. Experienced with databases, containerization and CI/CD. Strong problem solver who writes testable, maintainable code and works well in cross-functional teams.</div>
+        </section>
+
+        <section>
+          <h3>Experience</h3>
+
+          <div class="item">
+            <div class="job">
+              <div><strong>Senior Backend Engineer</strong> — Acme Tech</div>
+              <div class="muted">Jul 2022 — Present</div>
+            </div>
+            <ul>
+              <li>Built and maintained Spring Boot microservices for payments and order processing; improved throughput and reliability.</li>
+              <li>Introduced containerisation and deployment using Docker and Kubernetes, reducing environment drift.</li>
+              <li>Added monitoring and alerts (Prometheus, Grafana) to meet SLO targets.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="job">
+              <div><strong>Backend Developer</strong> — ByteWorks</div>
+              <div class="muted">May 2019 — Jun 2022</div>
+            </div>
+            <ul>
+              <li>Designed REST APIs and integrated payment and messaging services (Stripe, Twilio).</li>
+              <li>Improved test coverage and automated builds; reduced release defects.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>Education</h3>
+          <div class="item">
+            <strong>B.Tech, Computer Science</strong>
+            <div class="muted">IIT Example — 2015 — 2019</div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Selected Projects</h3>
+          <div class="item">
+            <strong>E‑Commerce Microservices</strong>
+            <div class="muted">Java, Spring Boot, Kafka, MySQL</div>
+            <div class="muted" style="margin-top:6px">Implemented product, cart and order services using event-driven architecture and Sagas for data consistency across services.</div>
+          </div>
+
+          <div class="item">
+            <strong>Corona Monitoring Pipeline</strong>
+            <div class="muted">Python, Airflow, Postgres</div>
+            <div class="muted" style="margin-top:6px">ETL pipeline for ingesting and visualising public health data (academic project).</div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="side">
+        <section>
+          <h3>Top skills</h3>
+          <div class="skill-list">
+            <div class="chip">Java</div>
+            <div class="chip">Spring Boot</div>
+            <div class="chip">REST APIs</div>
+            <div class="chip">Microservices</div>
+            <div class="chip">MySQL / PostgreSQL</div>
+            <div class="chip">Docker</div>
+            <div class="chip">Kubernetes</div>
+            <div class="chip">AWS</div>
+          </div>
+        </section>
+
+        <section style="margin-top:12px">
+          <h3>Tools & Tech</h3>
+          <div class="muted">Git • Maven/Gradle • Hibernate • Prometheus • Grafana • Jenkins • Kafka</div>
+        </section>
+
+        <section style="margin-top:12px">
+          <h3>Certifications</h3>
+          <div class="muted">Oracle Certified Professional — Java SE</div>
+        </section>
+
+        <section style="margin-top:12px">
+          <h3>Languages</h3>
+          <div class="muted">English (Professional), Hindi (Native)</div>
+        </section>
+
+      </aside>
+    </div>
+
+    <div style="margin-top:18px;font-size:13px;color:var(--muted)">Notes: This single-page resume is print-friendly — use your browser's Print → Save as PDF to export.</div>
+  </div>
+</body>
+</html>
